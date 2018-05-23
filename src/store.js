@@ -20,7 +20,7 @@ export default new Vuex.Store({
   actions: {
     readQuestions ({ commit }) {
       axios
-        .get('http://localhost:3000/questions')
+        .get('http://hacktiv-overflow-server.ihsanmaulanahamdani.club/questions')
         .then(response => {
           commit('getAllQuestion', response.data.questions)
         })
@@ -30,7 +30,7 @@ export default new Vuex.Store({
     },
     readAnswers ({ commit }) {
       axios
-        .get('http://localhost:3000/answers')
+        .get('http://hacktiv-overflow-server.ihsanmaulanahamdani.club/answers')
         .then(response => {
           commit('getAllAnswer', response.data.answers)
         })

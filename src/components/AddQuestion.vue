@@ -51,7 +51,7 @@ export default {
       let self = this
 
       axios
-        .post('http://localhost:3000/questions', {
+        .post('http://hacktiv-overflow-server.ihsanmaulanahamdani.club/questions', {
           question: self.question,
           description: self.description,
           owner: self.id

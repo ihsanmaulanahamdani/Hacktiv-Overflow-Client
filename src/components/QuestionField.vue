@@ -99,7 +99,7 @@ export default {
       let self = this
       
       axios
-        .post('http://localhost:3000/answers', {
+        .post('http://hacktiv-overflow-server.ihsanmaulanahamdani.club/answers', {
           answer: self.answer,
           owner: self.userId,
           questionId: self.questionId
@@ -120,7 +120,7 @@ export default {
       let self = this
 
       axios
-        .delete(`http://localhost:3000/answers/delete/${id}`, {
+        .delete(`http://hacktiv-overflow-server.ihsanmaulanahamdani.club/answers/delete/${id}`, {
           headers: {
             token: self.token,
             owner: self.userId,
@@ -138,7 +138,7 @@ export default {
       let self = this
 
       axios
-        .put(`http://localhost:3000/questions/upvote/${id}`, {
+        .put(`http://hacktiv-overflow-server.ihsanmaulanahamdani.club/questions/upvote/${id}`, {
           owner: self.userId
         }, {
           headers: {
@@ -156,7 +156,7 @@ export default {
       let self = this
 
       axios
-        .put(`http://localhost:3000/questions/downvote/${id}`, {
+        .put(`http://hacktiv-overflow-server.ihsanmaulanahamdani.club/questions/downvote/${id}`, {
           owner: self.userId
         }, {
           headers: {
@@ -174,7 +174,7 @@ export default {
       let self = this
 
       axios
-        .put(`http://localhost:3000/answers/upvote/${id}`, {
+        .put(`http://hacktiv-overflow-server.ihsanmaulanahamdani.club/answers/upvote/${id}`, {
           owner: self.userId
         }, {
           headers: {
@@ -192,7 +192,7 @@ export default {
       let self = this
 
       axios
-        .put(`http://localhost:3000/answers/downvote/${id}`, {
+        .put(`http://hacktiv-overflow-server.ihsanmaulanahamdani.club/answers/downvote/${id}`, {
           owner: self.userId
         }, {
           headers: {

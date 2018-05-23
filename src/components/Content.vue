@@ -65,7 +65,7 @@ export default {
       let self = this
 
       axios
-        .delete(`http://localhost:3000/questions/delete/${id}`, {
+        .delete(`http://hacktiv-overflow-server.ihsanmaulanahamdani.club/questions/delete/${id}`, {
           headers: {
             token: self.token,
             owner: self.userId
